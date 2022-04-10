@@ -1,0 +1,32 @@
+﻿@model IEnumerable<ForzaMimic.TransferObjects.FieldStudy>
+
+@{
+    ViewData["Title"] = "What does a car look like?";
+}
+
+<p>What better place to learn what a car looks like than the most famous racetrack in Germany, the <a href="https://nuerburgring.de/">Nurburgring</a>.  I've tuned some vehicles, collected some of their important statistics, and taken them out for a "field study".   Click on one below that you wish to explore.</p
+<div class="container">
+<div class="row">
+@foreach (var item in Model) {
+
+
+    <div class="col">
+        <div class="card rounded mb-4 shadow">
+            <div class="card-body">
+                <h5 class="card-title">@item.VehicleFriendlyName</h5>
+                <p class="card-text">@item.VehicleDescription</p>
+                <a asp-action="Details" asp-route-id="@item.FieldStudyId" class="btn btn-primary">View Details</a>
+            </div>
+        </div>
+    </div>
+}
+</div>
+</div>
+
+
+
+
+
+
+
+

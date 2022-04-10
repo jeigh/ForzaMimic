@@ -1,0 +1,337 @@
+﻿@model ForzaMimic.TransferObjects.FieldStudy
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<div class="container">
+<dl class="row">
+<dt class = "col-sm-4">
+    @Html.DisplayNameFor(model => model.FieldLaps)
+</dt>
+<dd class = "col-sm-2">
+    @Html.DisplayFor(model => model.FieldLaps)
+</dd>
+<dt class = "col-sm-4">
+    @Html.DisplayNameFor(model => model.ElapsedTotal)
+</dt>
+<dd class = "col-sm-2">
+    @Html.DisplayFor(model => model.ElapsedTotal)
+</dd>
+<dt class = "col-sm-4">
+    @Html.DisplayNameFor(model => model.RollingStart)
+</dt>
+<dd class = "col-sm-2">
+    @Html.DisplayFor(model => model.RollingStart)
+</dd>
+<dt class = "col-sm-4">
+    @Html.DisplayNameFor(model => model.VehicleFriendlyName)
+</dt>
+<dd class = "col-sm-2">
+    @Html.DisplayFor(model => model.VehicleFriendlyName)
+</dd>
+
+
+<div class = "col-sm-6">
+    <div class="fw-bold">
+        @Html.DisplayNameFor(model => model.VehicleDescription)
+    </div>
+    <div class="border border-dark">
+        @Html.DisplayFor(model => model.VehicleDescription)
+    </div>
+</div>
+
+
+
+<dt class = "col-sm-4">
+    @Html.DisplayNameFor(model => model.CarMake)
+</dt>
+<dd class = "col-sm-2">
+    @Html.DisplayFor(model => model.CarMake)
+</dd>
+<dt class = "col-sm-4">
+    @Html.DisplayNameFor(model => model.CarModel)
+</dt>
+<dd class = "col-sm-2">
+    @Html.DisplayFor(model => model.CarModel)
+</dd>
+<dt class = "col-sm-4">
+    @Html.DisplayNameFor(model => model.Weight)
+</dt>
+<dd class = "col-sm-2">
+    @Html.DisplayFor(model => model.Weight)
+</dd>
+<dt class = "col-sm-4">
+    @Html.DisplayNameFor(model => model.FrontWeight)
+</dt>
+<dd class = "col-sm-2">
+    @Html.DisplayFor(model => model.FrontWeight)
+</dd>
+<dt class = "col-sm-4">
+    @Html.DisplayNameFor(model => model.DriveType)
+</dt>
+<dd class = "col-sm-2">
+    @Html.DisplayFor(model => model.DriveType)
+</dd>
+<dt class = "col-sm-4">
+    @Html.DisplayNameFor(model => model.PowerBandMin)
+</dt>
+<dd class = "col-sm-2">
+    @Html.DisplayFor(model => model.PowerBandMin)
+</dd>
+<dt class = "col-sm-4">
+    @Html.DisplayNameFor(model => model.Torque)
+</dt>
+<dd class = "col-sm-2">
+    @Html.DisplayFor(model => model.Torque)
+</dd>
+<dt class = "col-sm-4">
+    @Html.DisplayNameFor(model => model.IsForcedInduction)
+</dt>
+<dd class = "col-sm-2">
+    @Html.DisplayFor(model => model.IsForcedInduction)
+</dd>
+<dt class = "col-sm-4">
+    @Html.DisplayNameFor(model => model.NumberOfGears)
+</dt>
+<dd class = "col-sm-2">
+    @Html.DisplayFor(model => model.NumberOfGears)
+</dd>
+<dt class = "col-sm-4">
+    @Html.DisplayNameFor(model => model.RearTireSectionWidth)
+</dt>
+<dd class = "col-sm-2">
+    @Html.DisplayFor(model => model.RearTireSectionWidth)
+</dd>
+<dt class = "col-sm-4">
+    @Html.DisplayNameFor(model => model.SidewallAspectRatio)
+</dt>
+<dd class = "col-sm-2">
+    @Html.DisplayFor(model => model.SidewallAspectRatio)
+</dd>
+<dt class = "col-sm-4">
+    @Html.DisplayNameFor(model => model.WheelDiameter)
+</dt>
+<dd class = "col-sm-2">
+    @Html.DisplayFor(model => model.WheelDiameter)
+</dd>
+<dt class = "col-sm-4">
+    @Html.DisplayNameFor(model => model.PerformanceIndex)
+</dt>
+<dd class = "col-sm-2">
+    @Html.DisplayFor(model => model.PerformanceIndex)
+</dd>
+<dt class = "col-sm-4">
+    @Html.DisplayNameFor(model => model.SimulatedZeroToSixty)
+</dt>
+<dd class = "col-sm-2">
+    @Html.DisplayFor(model => model.SimulatedZeroToSixty)
+</dd>
+<dt class = "col-sm-4">
+    @Html.DisplayNameFor(model => model.SimulatedZeroToOneHundred)
+</dt>
+<dd class = "col-sm-2">
+    @Html.DisplayFor(model => model.SimulatedZeroToOneHundred)
+</dd>
+<dt class = "col-sm-4">
+    @Html.DisplayNameFor(model => model.SimulatedQuarterMile)
+</dt>
+<dd class = "col-sm-2">
+    @Html.DisplayFor(model => model.SimulatedQuarterMile)
+</dd>
+<dt class = "col-sm-4">
+    @Html.DisplayNameFor(model => model.TopSpeed)
+</dt>
+<dd class = "col-sm-2">
+    @Html.DisplayFor(model => model.TopSpeed)
+</dd>
+<dt class = "col-sm-4">
+    @Html.DisplayNameFor(model => model.BreakingDistance60InFeet)
+</dt>
+<dd class = "col-sm-2">
+    @Html.DisplayFor(model => model.BreakingDistance60InFeet)
+</dd>
+<dt class = "col-sm-4">
+    @Html.DisplayNameFor(model => model.BreakingDistance100InFeet)
+</dt>
+<dd class = "col-sm-2">
+    @Html.DisplayFor(model => model.BreakingDistance100InFeet)
+</dd>
+<dt class = "col-sm-4">
+    @Html.DisplayNameFor(model => model.LateralG60)
+</dt>
+<dd class = "col-sm-2">
+    @Html.DisplayFor(model => model.LateralG60)
+</dd>
+<dt class = "col-sm-4">
+    @Html.DisplayNameFor(model => model.LateralG120)
+</dt>
+<dd class = "col-sm-2">
+    @Html.DisplayFor(model => model.LateralG120)
+</dd>
+<dt class = "col-sm-4">
+    @Html.DisplayNameFor(model => model.FrontPsi)
+</dt>
+<dd class = "col-sm-2">
+    @Html.DisplayFor(model => model.FrontPsi)
+</dd>
+<dt class = "col-sm-4">
+    @Html.DisplayNameFor(model => model.RearPsi)
+</dt>
+<dd class = "col-sm-2">
+    @Html.DisplayFor(model => model.RearPsi)
+</dd>
+<dt class = "col-sm-4">
+    @Html.DisplayNameFor(model => model.FinalGearing)
+</dt>
+<dd class = "col-sm-2">
+    @Html.DisplayFor(model => model.FinalGearing)
+</dd>
+
+
+<dt class = "col-sm-4">
+    @Html.DisplayNameFor(model => model.FrontCamber)
+</dt>
+<dd class = "col-sm-2">
+    @Html.DisplayFor(model => model.FrontCamber)
+</dd>
+<dt class = "col-sm-4">
+    @Html.DisplayNameFor(model => model.RearCamber)
+</dt>
+<dd class = "col-sm-2">
+    @Html.DisplayFor(model => model.RearCamber)
+</dd>
+<dt class = "col-sm-4">
+    @Html.DisplayNameFor(model => model.FrontToe)
+</dt>
+<dd class = "col-sm-2">
+    @Html.DisplayFor(model => model.FrontToe)
+</dd>
+<dt class = "col-sm-4">
+    @Html.DisplayNameFor(model => model.RearToe)
+</dt>
+<dd class = "col-sm-2">
+    @Html.DisplayFor(model => model.RearToe)
+</dd>
+<dt class = "col-sm-4">
+    @Html.DisplayNameFor(model => model.FrontCaster)
+</dt>
+<dd class = "col-sm-2">
+    @Html.DisplayFor(model => model.FrontCaster)
+</dd>
+<dt class = "col-sm-4">
+    @Html.DisplayNameFor(model => model.FrontAntiRoll)
+</dt>
+<dd class = "col-sm-2">
+    @Html.DisplayFor(model => model.FrontAntiRoll)
+</dd>
+<dt class = "col-sm-4">
+    @Html.DisplayNameFor(model => model.RearAntiRoll)
+</dt>
+<dd class = "col-sm-2">
+    @Html.DisplayFor(model => model.RearAntiRoll)
+</dd>
+<dt class = "col-sm-4">
+    @Html.DisplayNameFor(model => model.FrontSprings)
+</dt>
+<dd class = "col-sm-2">
+    @Html.DisplayFor(model => model.FrontSprings)
+</dd>
+<dt class = "col-sm-4">
+    @Html.DisplayNameFor(model => model.RearSprings)
+</dt>
+<dd class = "col-sm-2">
+    @Html.DisplayFor(model => model.RearSprings)
+</dd>
+<dt class = "col-sm-4">
+    @Html.DisplayNameFor(model => model.FrontRideHeight)
+</dt>
+<dd class = "col-sm-2">
+    @Html.DisplayFor(model => model.FrontRideHeight)
+</dd>
+<dt class = "col-sm-4">
+    @Html.DisplayNameFor(model => model.RearRideHeight)
+</dt>
+<dd class = "col-sm-2">
+    @Html.DisplayFor(model => model.RearRideHeight)
+</dd>
+<dt class = "col-sm-4">
+    @Html.DisplayNameFor(model => model.FrontRebound)
+</dt>
+<dd class = "col-sm-2">
+    @Html.DisplayFor(model => model.FrontRebound)
+</dd>
+<dt class = "col-sm-4">
+    @Html.DisplayNameFor(model => model.RearRebound)
+</dt>
+<dd class = "col-sm-2">
+    @Html.DisplayFor(model => model.RearRebound)
+</dd>
+<dt class = "col-sm-4">
+    @Html.DisplayNameFor(model => model.FrontBump)
+</dt>
+<dd class = "col-sm-2">
+    @Html.DisplayFor(model => model.FrontBump)
+</dd>
+<dt class = "col-sm-4">
+    @Html.DisplayNameFor(model => model.RearBump)
+</dt>
+<dd class = "col-sm-2">
+    @Html.DisplayFor(model => model.RearBump)
+</dd>
+<dt class = "col-sm-4">
+    @Html.DisplayNameFor(model => model.FrontDownforce)
+</dt>
+<dd class = "col-sm-2">
+    @Html.DisplayFor(model => model.FrontDownforce)
+</dd>
+<dt class = "col-sm-4">
+    @Html.DisplayNameFor(model => model.RearDownforce)
+</dt>
+<dd class = "col-sm-2">
+    @Html.DisplayFor(model => model.RearDownforce)
+</dd>
+<dt class = "col-sm-4">
+    @Html.DisplayNameFor(model => model.BrakingBalance)
+</dt>
+<dd class = "col-sm-2">
+    @Html.DisplayFor(model => model.BrakingBalance)
+</dd>
+<dt class = "col-sm-4">
+    @Html.DisplayNameFor(model => model.BrakingForce)
+</dt>
+<dd class = "col-sm-2">
+    @Html.DisplayFor(model => model.BrakingForce)
+</dd>
+<dt class = "col-sm-4">
+    @Html.DisplayNameFor(model => model.RearDifferentialAccel)
+</dt>
+<dd class = "col-sm-2">
+    @Html.DisplayFor(model => model.RearDifferentialAccel)
+</dd>
+<dt class = "col-sm-4">
+    @Html.DisplayNameFor(model => model.RearDifferentialDecel)
+</dt>
+<dd class = "col-sm-2">
+    @Html.DisplayFor(model => model.RearDifferentialDecel)
+</dd>
+
+</dl>
+<div class="container-fluid">
+    <div class="container-fluid embed-responsive embed-responsive-16by9">
+        <iframe class="embed-responsive-item" src="@Model.VideoUrl" width="1200" height="600"></iframe>
+    </div>
+</div>
+    
+    
+    
+    
+    
+    
+    
+    
+
+</div>
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
