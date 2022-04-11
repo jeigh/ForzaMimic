@@ -6,7 +6,7 @@ The requirement is to build a web project that describes a car. What I am lookin
 
 To make this fun, and since I'm not a mechanic, I decided to relate it to the car-related video game that I most recently enjoyed:  Forza Motorsport 7.   In Forza, the player is allowed to tune their vehicles in an attempt to get their best time around a given track.   The tune is allowed to affect many variables, such as maximum speed, accelleration, aerodynamics, cornering, traction, etc...
 
-The UI presented isn't meant to be new.   For the post part, I took the UI controls in Forza and correlated them to their closest counterpart in the video game.  Integers remain integers, sliders remain sliders, etc...
+I originally planned on simulating the UI from Forza Motorsport 7, but ran into time constraints, so most values are presented in their primitive formats (eg.. string, int, decimal, etc...).  Given more time, I'd probably introduce sliders and such.   Also might implement an add, update, and delete feature.
 
 So as to honestly be able to say that I played video games to get a second interview, I also field tested the cars contained in this project, and recorded the results in video format.   Each test run should link to the corresponding video that I then uploaded on to youtube.
 
