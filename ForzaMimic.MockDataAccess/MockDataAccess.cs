@@ -94,7 +94,7 @@ namespace ForzaMimic.MockDataAccess
         {
             CardColor = "Red",
             VehicleFriendlyName = "Red Corvette",
-            VehicleDescription = "A close approximation of Letty's red Corvette from the fast & the furious series",
+            VehicleDescription = "A close approximation of Letty's red Corvette from the Fast & The Furious series",
             CarMake = "Chevrolet",
             CarModel = "Corvette",
             Weight = 3092,
@@ -209,7 +209,7 @@ namespace ForzaMimic.MockDataAccess
         {
             CardColor = "Green",
             VehicleFriendlyName = "Green Jaguar",
-            VehicleDescription = "This green Jaguar is meant to simulate the car driven by Deckard Shaw, played by Jason Statham.",
+            VehicleDescription = "This green Jaguar is meant to simulate the car driven by Deckard Shaw, played by Jason Statham in the Fast & The Furious series.",
             CarMake = "Jaguar",
             CarModel = "F-Type R Coupe",
             Weight = 3388,
