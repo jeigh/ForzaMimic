@@ -3,6 +3,8 @@ using ForzaMimic.TransferObjects;
 
 namespace ForzaMimic.MockDataAccess
 {
+    // normally I'd put this data in a database, but since I wanted this data to be available in code, 
+    // I'm just going to deploy it with the mocks and only change that if there's a compelling reason to add create/update/delete features.
     public class MockDataAccess : IForzaMimicDataAccess
     {
         public MockDataAccess()
@@ -76,14 +78,14 @@ namespace ForzaMimic.MockDataAccess
             FrontBump = 4.1M,
             RearBump = 4.0M,
             FrontDownforce = "MEDIUM",
-            RearDownforce = "MEDIUM",
+            RearDownforce = "LOW",
             BrakingBalance = 0.53M,
             BrakingForce = 1M,
             RearDifferentialAccel = 0.49M,
             RearDifferentialDecel = 0.31M,
             FieldStudyId = new Guid("b0f77449-acac-4042-8859-53abc421e154"),
             FieldLaps = 2,
-            ElapsedTotal = 0,
+            ElapsedTotal = 1350,
             RollingStart = false,
             FieldTestComments = "Fairly easy to control this car because it's both rather low in power, and FF cars are pretty easy to control already.",
             VideoUrl = "https://www.youtube.com/embed/1ig00IB20PE"
@@ -92,7 +94,7 @@ namespace ForzaMimic.MockDataAccess
         {
             CardColor = "Red",
             VehicleFriendlyName = "Red Corvette",
-            VehicleDescription = "A close approximation of Letty's red corvette from the fast & the furious series",
+            VehicleDescription = "A close approximation of Letty's red Corvette from the fast & the furious series",
             CarMake = "Chevrolet",
             CarModel = "Corvette",
             Weight = 3092,
@@ -142,7 +144,7 @@ namespace ForzaMimic.MockDataAccess
             FieldLaps = 2,
             ElapsedTotal = 1266,
             RollingStart = true,
-            FieldTestComments = "Dispite being an RWD car, it was relatively easy to keep on the road, potentially because of the low weight, rear downforce, and not being remarkably overpowered.  I wasn't too eager to turn of TCS though.",
+            FieldTestComments = "Despite being an RWD car, it was relatively easy to keep on the road, potentially because of the low weight, rear downforce, and not being remarkably overpowered.  I wasn't too eager to turn of TCS though.",
             VideoUrl = "https://www.youtube.com/embed/CPIBjtRutyg"
 
         };
@@ -200,14 +202,14 @@ namespace ForzaMimic.MockDataAccess
             FieldLaps = 2,
             ElapsedTotal = 1210,
             RollingStart = true,
-            FieldTestComments = "Because of the well tuned differentials, the driver was able to turn off TCS and still keep control over the vehicle most of the time at high speeds.",
+            FieldTestComments = "Because of the well tuned differentials, the driver was able to turn off TCS and still keep control over the vehicle most of the time at high speeds.  I was underpowered for my class, so there was some aggressive driving in the beginning.",
             VideoUrl = "https://www.youtube.com/embed/" + "v5oABO4QxpE"
         };
         private FieldStudy _greenJaguar = new FieldStudy()
         {
             CardColor = "Green",
             VehicleFriendlyName = "Green Jaguar",
-            VehicleDescription = "This Green Jaguar is meant to simulate the car driven by Deckard Shaw, played by Jason Statham.",
+            VehicleDescription = "This green Jaguar is meant to simulate the car driven by Deckard Shaw, played by Jason Statham.",
             CarMake = "Jaguar",
             CarModel = "F-Type R Coupe",
             Weight = 3388,
@@ -255,7 +257,7 @@ namespace ForzaMimic.MockDataAccess
             RearDifferentialDecel = 0.34M,
             FieldStudyId = new Guid("ef92a120-fc21-4bef-8d18-4008a26f31d4"),
             FieldLaps = 2,
-            ElapsedTotal = 0,
+            ElapsedTotal = 1235,
             RollingStart = false,
             FieldTestComments = "Driver still had difficulty keeping this thing on the road despite turning TCS on.  Lots of power in the rear to propel the vehicle forward, but that power comes at the risk of spinning out and chance of oversteer. ",
             VideoUrl = "https://www.youtube.com/embed/" + "KonURgN8wlk"
